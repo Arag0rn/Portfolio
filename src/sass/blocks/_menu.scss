@@ -92,6 +92,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        &:hover {
+            fill: antiquewhite;
+        }
     }
     &__overlay {
         position: fixed;
