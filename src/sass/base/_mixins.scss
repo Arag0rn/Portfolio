@@ -12,3 +12,15 @@
 
     }
 }
+@mixin before_circle2 {
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background-color: $main-color;
+    }
+}

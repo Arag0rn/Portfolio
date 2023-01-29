@@ -1,0 +1,66 @@
+.about_me {
+    h3 {
+        @include before_circle2;
+        padding-left: 11px;
+        position: relative
+        
+    }
+    h3:before {
+        right: 95%;
+        top: -10%;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+    }
+    &__wraper {
+        padding-top: 120px;
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        column-gap: 68px;
+    }
+    &__skill_blocks {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns:260px 260px;
+        column-gap: 100px;
+        row-gap: 42px;
+        
+    }
+    &__skill_block {
+        display: grid;
+        grid-template-columns: 45px 200px;
+        column-gap:20px;
+    }
+    &__skill_block_img {
+            position: relative;
+            z-index: 2;
+            @include before_circle2;
+            img {
+                position: absolute;
+                top: 15%;
+                right: 19%;
+            }
+        
+        }
+    
+    &__skill_block_sub {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        color: #000000;
+        
+
+    }
+    &__skill_block_text {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: #000000;
+    }
+    
+}
