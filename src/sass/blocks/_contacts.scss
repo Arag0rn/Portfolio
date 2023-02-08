@@ -1,0 +1,94 @@
+.contacts {
+    padding: 120px 0 90px 0;
+    &__wraper {
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+    }
+    &__foto {
+        img {
+         width: 100%;   
+        }
+        
+    }
+    &__header, &__devider {
+           display: grid;
+           justify-content: flex-start;
+           margin: 0;
+        
+    }
+    &__title {
+        margin-top: 5px;
+        padding-left: 9px;
+        position: relative;
+        z-index: 2;
+         @include before_circle2;
+         &:before {
+            left: -4px;
+            top: -5px  
+         }
+        
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__social {
+        margin-top: 20px;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            max-width: 30px;
+            max-height: 30px;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
+        gap: 28.5px;
+        label {
+            display: block;
+            position: absolute;
+            height: 18px;
+            padding: 0 8px;
+            background-color: #fff;
+            font-size: 12px;
+            margin-bottom: 0;
+            top: -9px;
+            left: 12px;
+        }
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-weight: 500;
+            font-size: 12px;
+            color: #000000;
+        }
+       
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-size: 12px;
+
+        }
+    }
+    &__btn {
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        
+
+    }
+
+} 

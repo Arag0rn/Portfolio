@@ -17,3 +17,20 @@ const counters = document.querySelectorAll('.skills__counter'),
 counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
+
+$('form').submit(function(e) {
+    e.preventDefault()
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function(){
+        $(this).find("imput").val("");
+
+
+        $('form').triger('reset');
+
+    });
+    return false;
+
+});

@@ -1,0 +1,44 @@
+.price {
+    margin-top: 120px;
+    &__wraper {
+        display: grid; 
+        grid-template-columns: 366px 366px;
+        justify-content: space-between;
+        margin-top: 60px;
+    }
+    &__right_list {
+        display: grid;
+        justify-content: end;
+    }
+    ul {
+       list-style: none; 
+    }
+    span {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    li {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__head {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        @include before_circle2;
+        &:before {
+            width: 15px;
+            height: 15px;
+            left: -25px;
+            top: 9px;
+        }
+    }
+
+}
+.price_devider {
+    margin-top: 20px;
+}
