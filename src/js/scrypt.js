@@ -18,19 +18,22 @@ counters.forEach( (item, i) => {
     lines[i].style.width = item.innerHTML;
 });
 
+
 $('form').submit(function(e) {
-    e.preventDefault()
+    e.preventDefault();
     $.ajax({
         type: "POST",
         url: "mailer/smart.php",
         data: $(this).serialize()
-    }).done(function(){
-        $(this).find("imput").val("");
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#consultation, #order').fadeOut();
+        $('.overlay, #thanks').fadeIn('slow');
 
-
-        $('form').triger('reset');
-
+        $('form').trigger('reset');
     });
     return false;
-
 });
+
+ 
+

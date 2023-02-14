@@ -75,15 +75,15 @@
         </div>
     </section>
 
-    <section class="about_me">
+    <section class="about_me"> 
         <div class="container">
             <div class="about_me__wraper">
-                <img class="about_me__photo" src="img/Photo1.jpg" width = 400 alt="Photo">
+                <img class="about_me__photo" src="img/Photo1.jpg" alt="Photo">
                 <div class="about_me__block">
                    <div class="about_me__2column">
                     <div class="about_me__header">
                         <h3>About me</h3>
-                        <div class="about_me title_fz48">My name Serhii</div>
+                        <div class="about_me title_fz36">My name Serhii</div>
                         <div class="about_me__devider"></div>
                     </div>
                 
@@ -123,7 +123,7 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section class="resume"> 
         <div class="container">
             <h2 class="title title_fz16 resume__title">Experience</h2>
             <div class="title title_fz36 resume__subtitle">How can I be useful</div>
@@ -349,7 +349,7 @@
         </div>
     </section>
 
-    <section class="contacts">
+     <section class="contacts">
         <div class="container">
             <div class="contacts__wraper">
                 <div class="contacts__foto">
@@ -367,8 +367,8 @@
                     In any way convenient for you:
                 </div>
                 <div class="contacts__social">
-                    <a href="icons/Facebook.svg" class="contacts__link"><img src="icons/Facebook1.svg" alt="Facebook"></a>
-                    <a href="" class="contacts__link"><img src="icons/Instagram1.svg" alt="Instagram1"></a>
+                    <a href="#" class="contacts__link"><img src="icons/Facebook1.svg" alt="Facebook"></a>
+                    <a href="#" class="contacts__link"><img src="icons/Instagram1.svg" alt="Instagram1"></a>
                     <a href="https://t.me/Crowwing" class="contacts__link"><img src="icons/Telegram.svg" alt="Telegram"></a>
                 </div>
 
@@ -379,11 +379,11 @@
 
                 <form action="#" class="contacts__form">
                     <div class="contacts__input">
-                        <input name="name" id="name" type="text">
+                        <input required name="name" id="name" type="text">
                         <label for="name">Your name</label>
                     </div>
                     <div class="contacts__input">
-                        <input name="email" id="email" type="email">
+                        <input required name="email" id="email" type="email">
                         <label for="email">Your mail</label>
                     </div>
                     <div class="contacts__textarea">
@@ -391,17 +391,21 @@
                             <label for="text">Your message</label>
                         
                     </div>
-                    <div>
+                    <div class="contacts__triggers">
                         <button class=" contacts__btn btn">Send message</button>
+                        <div class="contacts__privacy">
+                            <input required type="checkbox">
+                            <span>Я согласен(а) с <a href="#">политикой конфиденциальности</a> </span>
+                        </div>
                     </div>
                 </form>
             </div>
             </div>
         </div>
-    </section>
-    
+    </section> 
+     
 
-    </div>
+    
     
     <script src="js/scrypt.js"></script>
 </body>
